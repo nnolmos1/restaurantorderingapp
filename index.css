@@ -98,8 +98,12 @@ body {
     color: #8B8B8B;
 }
 
-.black {
-    color: #000000
+.dividerBlack {
+    width: 504px;
+    height: 1px;
+    margin: 20px auto;
+    text-align: center;
+    background: #000000
 }
 
 .divider {

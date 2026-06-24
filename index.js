@@ -88,7 +88,7 @@ function getOrderHtml() {
             <div class="order-items-list">
                 ${orderHtml}
             </div>
-            <div class="divider black"> </div>
+            <div class="dividerBlack"> </div>
             <div class="order-total-section">
                 <span class="total-price-text">Total Price: </span>
                 <span class="total-price-amount"> $${totalPrice}</span>
