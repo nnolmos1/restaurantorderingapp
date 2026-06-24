@@ -166,4 +166,13 @@ body {
     margin-left: auto;
 }
 
+.complete-btn {
+    background: #16DB99;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
 
