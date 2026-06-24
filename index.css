@@ -1,8 +1,165 @@
 body {
-    font-family: 'Smythe' sans-serif;
+    font-family: "Smythe", sans-serif;
     margin: 0;
+    display: flex;
+    justify-content: center;
 } 
-
-header {
-    color: white;
+.container {
+    width: 600px;
+    height: 1161px;
 }
+
+.head-container {
+    width: 600px;
+    height: 167px;
+    color: white;
+    background-image: url("./images/burger_image.png");
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    padding-left: 46px;
+}
+
+.head-container h1,
+.head-container h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.emoji {
+    font-size: 78.72px;
+}
+
+.option-title{
+    font-size: 28px;
+}
+
+.option-ingredients{
+    font-size: 16px;
+
+}
+
+.option-price {
+    font-size: 20px;
+}
+
+.plus-container {
+    width: 50px;
+    height: 50px;
+    border-radius: 999px;
+    border: 1.5px solid #DEDEDE;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+}
+
+.plus-container button {
+    font-family: none;
+    font-weight: 100;
+    font-size: 27px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.menu-option {
+    width: 508px;
+    height: 140px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    margin: 20px auto;
+}
+
+.menu-option p {
+    margin: 0px;
+    padding: 6px;
+
+}
+
+.option-text {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    gap: 0px;
+}
+
+.gray {
+    color: #8B8B8B;
+}
+
+.black {
+    color: #000000
+}
+
+.divider {
+    width: 504px;
+    height: 1px;
+    background: #D2D2D2;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.order-summary {
+    font-size: 28px;
+    width: 504px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.order-title {
+    text-align: center;
+}
+
+.remove-btn {
+    color: #BBBBBB;
+    border: none;
+    background: transparent;
+}
+
+.total-price-amount{
+    margin-left: auto;
+}
+
+/* Align total price number to the right within the order total row */
+.order-total-section{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.total-price-amount{
+    margin-left: auto;
+}
+
+.order-items-list .order-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 0;
+}
+
+.order-items-list .order-item-price{
+    margin-left: auto;
+}
+
+.total-price-amount{
+    margin-left: auto;
+}
+
+
