@@ -1,6 +1,8 @@
 import { menuArray } from './data.js'
 
 let orders = [] //keeps track of users curr order
+const cardModal = document.getElementById('card-modal')
+
 
 document.addEventListener('click', function(e){
     if (e.target.dataset.add){
@@ -9,6 +11,25 @@ document.addEventListener('click', function(e){
 
     if (e.target.dataset.remove){
         handleRemoveClick(e.target.dataset.remove)
+    }
+
+    if (e.target.id === 'complete-btn'){
+        cardModal.style.display = 'flex'
+    }
+})
+
+document.addEventListener('submit', function(e){
+    
+    if (e.target.id === 'payment-form'){
+        e.preventDefault() // stops page refresh
+        
+        const clientName = document.getElementById('card-name').value
+        document.getElementById('user-name').textContent = clientName
+
+        renderThankYou()
+        cardModal.style.display = 'none'
+        orders = []
+        renderOrder() 
     }
 })
 
@@ -96,6 +117,13 @@ function getOrderHtml() {
             <button class="complete-btn" id="complete-btn">Complete order</button>
         </div>
     `
+}
+
+
+function renderThankYou() {
+    const thanksMsg = document.getElementById('thanks-msg')
+    thanksMsg.style.display = 'flex'
+
 }
 
 function renderOrder() {
